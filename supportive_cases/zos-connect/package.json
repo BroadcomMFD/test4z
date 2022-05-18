@@ -1,21 +1,20 @@
 {
-  "name": "test4z-sample",
+  "name": "cascading-jobs-sample",
   "version": "1.2.2",
-  "description": "Test samples repository for test4z",
+  "description": "Test samples for cascading jobs",
   "author": "Broadcom",
   "scripts": {
-    "test": "cd  nodejs && jest",
+    "test": "jest",
     "setup": "cd setup && sh script.sh && cd ..",
-    "setZosmf": "sh ../.scripts/setZosmf.sh",
-    "setTest4z": "sh ../.scripts/setTest4z.sh",
-    "diagnostic": "npx ts-node nodejs/DiagnosticCheck.ts"
+    "setZosmf": "sh ../../.scripts/setZosmf.sh",
+    "setHlq": "sh ../../.scripts/setHlq.sh"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/BroadcomMFD/test4z.git"
   },
   "devDependencies": {
-    "@types/jest": "^26.0.15",
+    "@types/jest": "^26.0.24",
     "@types/node": "^14.14.7",
     "jest": "^26.6.3",
     "ts-jest": "^26.4.4",
