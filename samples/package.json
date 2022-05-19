@@ -8,6 +8,7 @@
     "setup": "cd setup && sh script.sh && cd ..",
     "setZosmf": "sh ../.scripts/setZosmf.sh",
     "setTest4z": "sh ../.scripts/setTest4z.sh",
+    "setZosConnect" : "sh ../.scripts/setZosConnect.sh",
     "diagnostic": "npx ts-node nodejs/DiagnosticCheck.ts"
   },
   "repository": {

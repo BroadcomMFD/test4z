@@ -64,6 +64,18 @@
                         "user",
                         "password"
                     ]
+                },
+                "zosconnect": {
+                    "type": "zosconnect",
+                    "properties": {
+                        "host": "",
+                        "protocol": "http",
+                        "port": 0
+                    },
+                    "secure": [
+                        "user",
+                        "password"
+                    ]
                 }
             }
         },
@@ -83,7 +95,8 @@
         "base": "my_base",
         "test4z": "lpar1.test4z",
         "db2": "lpar1.db2",
-        "caview": "lpar1.caview"
+        "caview": "lpar1.caview",
+        "zosconnect": "lpar1.zosconnect"
     },
     "plugins": []
 }

@@ -1,7 +1,7 @@
 {
-  "name": "cascading-jobs-sample",
+  "name": "zosconnect-sample",
   "version": "1.2.2",
-  "description": "Test samples for cascading jobs",
+  "description": "Test sample for z/OS Connect",
   "author": "Broadcom",
   "scripts": {
     "test": "jest",
@@ -25,7 +25,7 @@
     "keytar": "7.8.0"
   },
   "dependencies": {
-    "@broadcom/test4z": "2.0.0",
-    "@zowe/cli": "7.0.0-next.202203101634"
+    "@broadcom/test4z": "1.3.0",
+    "@zowe/cli": "7.2.1"
   }
 }
