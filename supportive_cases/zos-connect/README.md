@@ -19,7 +19,7 @@ This folder contains a test sample that triggers an API endpoint through z/OS Co
 
        cd ../supportive_cases/zos-connect/
 
-3. Navigate to src/test/zosConnectSample and change the values of mainDataset and copybook to reflect your environment. We are using the CICS Catalog Manager example application. (stuff from IBM, do we mention that? dunno)
+3. Navigate to src/test/zosConnectSample and change the values of mainDataset and copybook to reflect your environment. We are using the CICS Catalog Manager example application. 
        
 
 # Run the Samples
