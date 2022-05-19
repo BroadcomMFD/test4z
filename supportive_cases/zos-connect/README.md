@@ -1,10 +1,9 @@
 # Test4z z/OS Connect sample
-This folder contains test sample for triggering an API endpoint through z/OS Connect to place order in the CICS Catalog manager example application. Prior to this we check the status of stock of the item. After the order is placed, we validate it happened by checking the stock again.  
+This folder contains a test sample that triggers an API endpoint through z/OS Connect. The sample places an order in the CICS Catalog manager of the example application. First it checks the status of the stock of the item. After the order is placed, it validates the success by checking the stock again.
 
 # Prerequisites
-z/OS instance set up and running
-CICS Catalog manager example application with webservice enabled
-connection between z/OS Connect and CICS region established
+- The CICS Catalog manager example application with webservice is enabled.
+- The connection between z/OS Connect and the CICS region is established.
 
 # Installation
 
