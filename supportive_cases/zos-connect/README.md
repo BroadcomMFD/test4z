@@ -9,19 +9,16 @@ This folder contains a test sample that triggers an API endpoint through z/OS Co
 
 1. Open a **new terminal** and run the following commands to enter the Test4z and z/OS Connect specific information. Ask your mainframe administrator for the information.
     
-        cd samples
+        cd supportive_cases/zos-connect/
     
         npm run setTest4z 
 
         npm run setZosConnect
 
-2. Run the following command. 
 
-       cd ../supportive_cases/zos-connect/
+2. Navigate to src/test/zosConnectSample and change the values of mainDataset and copybook to reflect your environment. We are using the CICS Catalog Manager example application. 
 
-3. Navigate to src/test/zosConnectSample and change the values of mainDataset and copybook to reflect your environment. We are using the CICS Catalog Manager example application. 
        
-
 # Run the Samples
 - Run the sample using the following command:
 
