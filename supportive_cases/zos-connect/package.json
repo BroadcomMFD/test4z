@@ -24,7 +24,7 @@
     "keytar": "7.8.0"
   },
   "dependencies": {
-    "@broadcom/test4z": "1.3.0",
+    "@broadcom/test4z": "2.0.0",
     "@zowe/cli": "7.2.1"
   }
 }

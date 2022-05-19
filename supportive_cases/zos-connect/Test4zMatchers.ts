@@ -6,9 +6,6 @@ declare global {
         interface Matchers<R> {
             toBeSuccessfulResult(): R;
         }
-        interface Matchers<R> {
-            toBeHaveTestData(): R;
-        }
     }
 }
 
@@ -33,31 +30,6 @@ export function toBeSuccessfulResult(received:any): jest.CustomMatcherResult {
         return {
             message: () =>
                 errorMessage,
-            pass: false,
-        };
-    }
-}
-
-/**
- * Custom matcher for Test4z API Search Request. Checks the Record key.
- * If it is there, that means Search result has data to be tested.
- * @param received - API result's data field.
- */
-export function toBeHaveTestData(received:any): jest.CustomMatcherResult {
-    let pass = 0;
-    if(received && received.Record)
-        pass = 1;
-
-    if (pass) {
-        return {
-            message: () =>
-                `Result have test data`,
-            pass: true,
-        };
-    } else {
-        return {
-            message: () =>
-                `Expected ${received} has no test data.`,
             pass: false,
         };
     }

@@ -1,5 +1,4 @@
-const {toBeSuccessfulResult, toBeHaveTestData} = require("./Test4zMatchers")
+const {toBeSuccessfulResult} = require("./Test4zMatchers")
 expect.extend({
-    toBeHaveTestData,
     toBeSuccessfulResult
 });
