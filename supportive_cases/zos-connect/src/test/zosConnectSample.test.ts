@@ -26,16 +26,16 @@ describe("z/OS Connect test case", function () {
         const searchBefore = await Test4zService.search(mainDataset,copybook,filters);
         expect(searchBefore).toBeSuccessfulResult();
         const recordBefore = searchBefore.data.Record[0]["WS-CATALOG-ITEM-LIST"]["WS-CATALOG-ITEM"]["WS-IN-STOCK"];
-        expect(searchBefore).not.toBeNull();
-
+        expect(recordBefore).toBeGreaterThan(0);
+        const itemRef = searchBefore.data.Record[0]["WS-CATALOG-ITEM-LIST"]["WS-CATALOG-ITEM"]["WS-ITEM-REF"];
+        expect(itemRef).not.toBeNull();
 
         // call z/OS Connect to trigger the API to place order within CICS 
         let zosconnectSession : Session = await SessionFactory.getSessionByName("zosconnect"); 
-        let requestBody = {DFH0XCMNOperation : {ca_order_request: {ca_item_ref_number: 20, ca_quantity_req: 1}}};
+        let requestBody = {DFH0XCMNOperation : {ca_order_request: {ca_item_ref_number: itemRef, ca_quantity_req: 1}}};
         let headers = [{"Content-Type":"application/json"},{"Content-Length":JSON.stringify(requestBody).length}];
         let output : any = await RestClient.postExpectJSON(zosconnectSession,"catalogManager/orders",headers,requestBody);
         expect (output.DFH0XCMNOperationResponse.ca_response_message).toContain("ORDER SUCCESSFULLY PLACED");
-
 
         // get the changed records after the order  
         const searchAfter = await Test4zService.search(mainDataset,copybook,filters);
