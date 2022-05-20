@@ -39,8 +39,9 @@ Once you have met the prerequisites,
     * [Samples](/samples/README.md)  ***(Test case samples that demonstrate the features and functions of Test4z using different languages and test frameworks.)***
     * Supportive Cases: ***(Handy test case samples that demonstrate various techniques, integrations, and subsystems)***
         * [DB2](/supportive_cases/db2/README.md)
-        * [Job Cascade](/supportive_cases/cascade/README.md)
         * [Ca-View](/supportive_cases/ca-view/README.md)
+        * [Job Cascade](/supportive_cases/cascade/README.md)
+        * [z/OS Connect](/supportive_cases/zos-connect/README.md)
 
 ## Notes
  
