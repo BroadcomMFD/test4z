@@ -187,7 +187,7 @@
                                         "properties": {
                                             "host": {
                                                 "type": "string",
-                                                "description": "The zosconnect server host name."
+                                                "description": "The zosconnect server hostname."
                                             },
                                             "port": {
                                                 "type": "number",
