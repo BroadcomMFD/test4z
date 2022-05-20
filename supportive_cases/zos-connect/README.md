@@ -21,7 +21,7 @@ This folder contains a test sample that triggers an API endpoint through z/OS Co
       
 3. Run the following command and enter the z/OS Connect specific information. 
    Ask your mainframe administrator for the information.
-   **In case you do not have the username and passwor, you can leave them blank**
+   **In case you do not have the username and password, you can leave them blank**
 
         npm run setZosConnect
 
