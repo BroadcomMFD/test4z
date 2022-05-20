@@ -1,0 +1,30 @@
+{
+  "name": "zosconnect-sample",
+  "version": "1.2.2",
+  "description": "Test sample for z/OS Connect",
+  "author": "Broadcom",
+  "scripts": {
+    "test": "jest",
+    "setTest4z": "sh ../../.scripts/setTest4z.sh",
+    "setZosConnect": "sh ../../.scripts/setZosConnect.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BroadcomMFD/test4z.git"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.24",
+    "@types/node": "^14.14.7",
+    "jest": "^26.6.3",
+    "ts-jest": "^26.4.4",
+    "ts-node": "^10.2.1",
+    "typescript": "^4.0.5"
+  },
+  "optionalDependencies": {
+    "keytar": "7.8.0"
+  },
+  "dependencies": {
+    "@broadcom/test4z": "2.0.0",
+    "@zowe/cli": "7.2.1"
+  }
+}

@@ -174,6 +174,70 @@
                             "if": {
                                 "properties": {
                                     "type": {
+                                        "const": "zosconnect"
+                                    }
+                                }
+                            },
+                            "then": {
+                                "properties": {
+                                    "properties": {
+                                        "type": "object",
+                                        "title": "zosconnect Profile",
+                                        "description": "zosconnect Profile",
+                                        "properties": {
+                                            "host": {
+                                                "type": "string",
+                                                "description": "The zosconnect server hostname."
+                                            },
+                                            "port": {
+                                                "type": "number",
+                                                "description": "The zosconnect server port.",
+                                                "default": 0
+                                            },
+                                            "rejectUnauthorized": {
+                                                "type": "boolean",
+                                                "description": "Reject self-signed certificates.",
+                                                "default": false
+                                            },
+                                            "protocol": {
+                                                "type": "string",
+                                                "description": "The protocol used (HTTP or HTTPS)",
+                                                "default": "https",
+                                                "enum": [
+                                                    "http",
+                                                    "https"
+                                                ]
+                                            },
+                                            "basePath": {
+                                                "type": "string",
+                                                "description": "The base path for your z/OS Connect API."
+                                            },
+                                            "user": {
+                                                "type": "string",
+                                                "description": "Mainframe user name, which can be the same as your TSO login."
+                                            },
+                                            "password": {
+                                                "type": "string",
+                                                "description": "Mainframe password, which can be the same as your TSO password."
+                                            }
+                                        },
+                                        "required": []
+                                    },
+                                    "secure": {
+                                        "prefixItems": {
+                                            "enum": [
+                                                "user",
+                                                "password"
+                                            ]
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "if": {
+                                "properties": {
+                                    "type": {
                                         "const": "caview"
                                     }
                                 }
@@ -372,6 +436,9 @@
                     "type": "string"
                 },
                 "base": {
+                    "type": "string"
+                },
+                "zosconnect": {
                     "type": "string"
                 }
             }
