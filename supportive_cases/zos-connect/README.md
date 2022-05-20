@@ -25,7 +25,7 @@ This folder contains a test sample that triggers an API endpoint through z/OS Co
 
         npm run setZosConnect
 
-4. Navigate to [src/test/zosConnectSample] and change the values of mainDataset and copybook to reflect your environment. We are using the CICS Catalog Manager example application. 
+4. Navigate to [src/test/zosConnectSample](/supportive_cases/zos-connect/src/test/zosConnectSample.test.ts) and change the values of mainDataset and copybook to  reflect your environment. We are using the [CICS Catalog Manager example application](https://www.ibm.com/docs/en/cics-ts/5.6?topic=samples-cics-catalog-manager-example-application). 
 
        
 # Run the Samples
