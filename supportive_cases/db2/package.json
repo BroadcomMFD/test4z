@@ -29,7 +29,7 @@
   },
   "dependencies": {
     "@broadcom/test4z": "2.0.0",
-    "@zowe/cli": "7.0.0-next.202203101634",
-    "@zowe/db2-for-zowe-cli": "5.0.0-next.202202071745"
+    "@zowe/cli": "7.2.1",
+    "@zowe/db2-for-zowe-cli": "5.0.0"
   }
 }

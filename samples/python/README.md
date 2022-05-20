@@ -8,7 +8,7 @@ Before continuing, make sure you completed the following installations:
 * [/samples/README.md](/samples/README.md)
 
 ## Installing
-
+You must install Python and pip.
 1. Download Python 3 from https://www.python.org/downloads
 
 2. **For Windows users,** make sure to have the path variable for Python in the system settings. Try the following command to check (result should be Python 3.x.x):
@@ -38,9 +38,15 @@ Before continuing, make sure you completed the following installations:
    If the command is not recognised, follow [this](https://www.educative.io/edpresso/how-to-add-python-to-path-variable-in-windows) url to see the guide.
 
       
-# Configuration 
+# Configuring
 
-Open the **src/python/config.cfg** file and enter the required parameters. The TEST4Z host url must start with https://...
+1. Submit the following command to configure Test4z:
+
+        cd src/main/.scripts/ && python set_test4z.py && cd ../../..
+        
+ 2. Submit the following command to configure z/OSMF:
+
+        cd src/main/.scripts/ && python set_zosmf.py && cd ../../..
 
 # Run Test4z Python Samples
 

@@ -24,4 +24,4 @@ npx zowe config set --secure profiles.lpar1.profiles.zosmf.properties.user "MOCK
 npx zowe config set --secure profiles.lpar1.profiles.zosmf.properties.password "MOCK"
 printf "\n\nZ/OSMF configuration in zowe.config.json was successful\n\n"
 printf "The mock server has started\n"
-npx ts-node ./src/app.ts
+npx ts-node ./mock/src/app.ts

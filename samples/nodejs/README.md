@@ -1,19 +1,28 @@
 # Test4z NodeJS Samples
 
-This repository contains the Test4z Samples in NodeJS. 
+This repository contains the Test4z Samples in NodeJS.
+* In the [code_snippets](/samples/nodejs/code_snippets) folder, you can find small code snippets for each of the Tezt4z features. These functional snippets can lead you to use in your own tests
+    * compare
+    * copy
+    * search
+    * update
+    
+* In the [business_cases](/samples/nodejs/business_cases) folder, you can find test suites of real world applications. Each sub folder has the use case explanation.
+    * checkOrdering 
 
-# Note
+## Note
 Before continuing with the installation, make sure you completed the following installations:
 
 * [/samples/README.md](/samples/README.md)
 
 ## Continue Installing
 
-1. Run the following command and enter the Test4z specific information. Ask your mainframe administrator for the information. 
+Run the following command and enter the Test4z specific information to continue the installation. Ask your mainframe administrator for the information. 
 
         npm run setTest4z
-    
-2. Before running the samples, check Test4z Service health status by executing the following command:
+     
+## Run the Samples
+1. Before running the samples, check the Test4z Service health status by executing the following command:
 
         npm run diagnostic
         
@@ -32,20 +41,6 @@ Before continuing with the installation, make sure you completed the following i
     **Possible values for these controls : Pass, Fail and Skip**
     
     In case of a failure get in touch with your System Administrator
-
-## Test4z Test Samples
-
-* In the [code_snippets](/samples/nodejs/code_snippets) folder, you can find small code snippets for each of the Tezt4z features. These functional snippets can lead you to use in your own tests
-    * compare
-    * copy
-    * search
-    * update
-    
-* In the [business_cases](/samples/nodejs/business_cases) folder, you can find test suites of real world applications. Each sub folder has the use case explanation.
-    * checkOrdering 
-    
-## Run the samples
-
-* Run the tests using the following command:
+2. Run the tests using the following command. Select one of the files contained in the [code_snippets](/samples/nodejs/code_snippets), or [business_cases](/samples/nodejs/business_cases) folder.
 
         npm run test <FILENAME>
