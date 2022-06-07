@@ -25,6 +25,6 @@
   },
   "dependencies": {
     "@broadcom/test4z": "2.0.0",
-    "@zowe/cli": "7.2.1"
+    "@zowe/cli": "7.2.2"
   }
 }
