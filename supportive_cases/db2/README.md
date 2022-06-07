@@ -40,7 +40,7 @@ Before continue to this installation, make sure you completed the following inst
         npm run setDb2
 
         
-4. Open the [/supportive_cases/db2/setup/script.sh](/supportive_cases/db2/setup/script.sh)  file and fill in the required parameters listed at the beginning of the file. Important: Make sure you use UPPER CASE for HLQ and Job Card fields.
+4. Open the [/supportive_cases/db2/setup/script.sh](/supportive_cases/db2/setup/script.sh)  file and fill in the required parameters listed at the beginning of the file. Important: Make sure you use UPPER CASE for HLQ, SQLID and Job Card fields.
                                                                  
 5. Copy the JCL test files to your z/OS system by executing the following command: 
 

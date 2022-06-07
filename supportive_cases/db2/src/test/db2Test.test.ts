@@ -14,7 +14,8 @@ describe("DB2-TEST - Batchapp validation", function () {
     beforeAll(async () => {
         //Test configuration
         const HLQ: any = await Db2Service.getProfileProp("hlq");
-        tableName = HLQ + "." + tableName;
+        const SQLID: any = await Db2Service.getProfileProp("sqlid");
+        tableName = SQLID + "." + tableName;
         batchAppJCLDataset = HLQ + "." + batchAppJCLDataset;
 
         //Insertion of the test records to the DB2 database

@@ -55,7 +55,7 @@
            DISPLAY 'NOTIFICATION DATE 2 IS ' WS-CURREN-DATE.
       *    IF PRODUCT-TYPE = 'C' OR PRODUCT-TYPE = 'S' THEN
            EXEC SQL
-             UPDATE $$HLQ.$$tablename SET NOTIFICATION_DATE
+             UPDATE $$SQLID.$$tablename SET NOTIFICATION_DATE
              = :WS-CURREN-DATE
              WHERE (((TOTAL_CHECKS = 30 AND ACTUAL_CHECKS <=3) OR
                    (TOTAL_CHECKS = 50 AND ACTUAL_CHECKS <=5) OR

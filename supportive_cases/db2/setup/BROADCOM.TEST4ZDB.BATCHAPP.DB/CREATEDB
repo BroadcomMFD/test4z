@@ -28,7 +28,7 @@ $$JOBCARD
 
 -- TEST FOR NON_UTS SEGMENTED TABLESPACE
 --SET CURRENT APPLICATION COMPATIBILITY = 'V12R1M505';
-SET CURRENT SQLID = '$$HLQ';
+SET CURRENT SQLID = '$$SQLID';
 --
 .OPTION SQLERRORS
 DROP DATABASE $$dbname;
@@ -47,7 +47,7 @@ STOGROUP $$sto;
 CREATE TABLESPACE $$tablespace IN $$dbname
  CCSID EBCDIC COMPRESS YES BUFFERPOOL BP1;
 -- <TABLE_DDL>
-CREATE TABLE $$HLQ.$$tablename(
+CREATE TABLE $$SQLID.$$tablename(
   CUST_NAME     CHAR(20)        NOT NULL
  ,CUST_ADDR  CHAR(20)    NOT NULL
  ,ACCOUNT_NUMBER CHAR(12)    NOT NULL
@@ -60,8 +60,8 @@ CREATE TABLE $$HLQ.$$tablename(
  )
  IN $$dbname.$$tablespace;
 -- </TABLE_DDL>
-  CREATE UNIQUE INDEX $$HLQ.UJQHST7Z
-                   ON $$HLQ.$$tablename
+  CREATE UNIQUE INDEX $$SQLID.UJQHST7Z
+                   ON $$SQLID.$$tablename
                        (ACCOUNT_NUMBER    ASC)
                    USING STOGROUP $$sto
                    ERASE NO
