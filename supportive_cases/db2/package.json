@@ -1,6 +1,6 @@
 {
   "name": "db2-sample",
-  "version": "1.2.2",
+  "version": "2.0.0",
   "description": "Test sample for DB2",
   "author": "Broadcom",
   "scripts": {
