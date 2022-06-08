@@ -26,7 +26,7 @@
                         "protocol": "https",
                         "type": "basic",
                         "port": 0,
-                        "basePath": "/api/v1/test4z",
+                        "basePath": "/api/v1",
                         "strictSSL": false,
                         "hlq": "",
                         "rejectUnauthorized": false
