@@ -393,6 +393,10 @@
                                                 "type": "string",
                                                 "description": "DB2 hlq"
                                             },
+                                            "sqlid": {
+                                                "type": "string",
+                                                "description": "DB2 object HLQ"
+                                            },
                                             "user": {
                                                 "type": "string",
                                                 "description": "Mainframe (z/OSMF) user name, which can be the same as your TSO login."

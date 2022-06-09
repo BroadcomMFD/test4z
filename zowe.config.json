@@ -42,7 +42,8 @@
                         "port": 0,
                         "host": "",
                         "database": "",
-                        "hlq": ""
+                        "hlq": "",
+                        "sqlid": ""
                     },
                     "secure": [
                         "user",

@@ -96,6 +96,8 @@ replaceDynamicVariable(){
     fi
     if [ ! -z "$hlqPlaceHolder" ]; then sed -i -e "s/${hlqPlaceHolder}/${hlq}/g" "$_path"
     fi
+     if [ ! -z "$sqlidPlaceHolder" ]; then sed -i -e "s/${sqlidPlaceHolder}/${sqlid}/g" "$_path"
+    fi
     if [ ! -z "$stoPlaceHolder" ]; then sed -i -e "s/${stoPlaceHolder}/${db2StorageGroup}/g" "$_path"
     fi
     if [ ! -z "$db2SubsystemPlaceHolder" ]; then sed -i -e "s/${db2SubsystemPlaceHolder}/${db2Subsystem}/g" "$_path"
@@ -209,7 +211,7 @@ createDatabase(){
   echo "Db2 database is being created by submiting the JCL ${dataset}, please wait"
   jobsubmit=$(npx zowe jobs submit ds "$dataset" --wfo)
   if [[ $jobsubmit == *"CC 0000"* ]]; then
-    printf "\nDB2 table %s.%s created successfully\n" "$hlq" "$db2TableName"
+    printf "\nDB2 table %s.%s created successfully\n" "$sqlid" "$db2TableName"
   else
     errorMessage "Db2 dataset creation failed, check:$jobsubmit" "$dataset"
   fi
