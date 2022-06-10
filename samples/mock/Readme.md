@@ -33,7 +33,7 @@ Follow these steps to use the Python samples with mocked Test4z:
 1. Install Python and pip as described in [Installing](/samples/python/README.md#installing).
 2. Submit the following command to configure the mock server:
     ```
-   cd src/main/.scripts/ && python set_mock.py && cd ../../..
+   cd samples/python/src/main/.scripts/ && python set_mock.py && cd ../../..
    ```
 3. Run the sample as described in [Run the Test4z Python Samples](/samples/python/README.md#run-test4z-python-samples).
 ### Note
