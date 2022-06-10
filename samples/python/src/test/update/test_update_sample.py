@@ -135,7 +135,7 @@ def test_with_yield_fixture(yield_fixture):
     job2 = submit_job_notify(batch_app_jcl_dataset)
     assert job_successful(job2)
 
-    # Pick some customers using the given inputs and assert the number of the customers
+    # Verify the number of the updated records changed after the batch application
     search_result2 = search(main_dataset, copybook, update_filter)
     assert request_successful(search_result2)
-    assert len(search_result2['data']['Record']) == 2
+    assert len(search_result2['data']['Record']) == 1
