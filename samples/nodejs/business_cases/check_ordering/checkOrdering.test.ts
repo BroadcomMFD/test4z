@@ -140,9 +140,9 @@ describe("Check Ordering Batchapp validation", function () {
         const searchResult2 = await Test4zService.search(mainDataset, copybook, [updateFilter]);
         expect(searchResult2).toBeSuccessfulResult(); //Verify the API Request was successful
         const records2 = searchResult2.data;
-        //Verify the number of the records changed after the batch application (it is +1 after the Update performed above)
-        expect(records2.Record.length).toBe(2);
-        //expect(TestHelpers.getNotificationDates(records2)).toBeNotificationDatesEqualTo(todaysDate); //Verify all the notification dates were updated.
+        //Verify the number of the updated records changed after the batch application
+        expect(records2.Record.length).toBe(1);
+        expect(TestHelpers.getNotificationDates(records2)).toBeNotificationDatesEqualTo(todaysDate);
     });
 
     afterEach(async () => {
