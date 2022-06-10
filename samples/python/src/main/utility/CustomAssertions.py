@@ -13,10 +13,10 @@ def job_successful(response):
 def service_healthy(response):
     checks = []
     for attr, value in response.__dict__.items():
-        if value.lower() != 'pass':
-            checks.append(attr)
+        if value in ["Fail", "Skip", None]:
+            checks.append("\n" + attr + " : " + value)
     if len(checks) > 0:
-        raise AssertionError("Diagnostic check failed for the following privileges: " + ', '.join(checks))
+        raise AssertionError("Diagnostic check failed for the following privileges:\n" + ', '.join(checks))
     else:
         print ("Test4z Service is up and running. The user has all the required privileges")
         return True
