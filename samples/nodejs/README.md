@@ -30,13 +30,17 @@ Run the following command and enter the Test4z specific information to continue 
     
     | Permission | Description |
     | --- | --- |  
-    **dsCreate**         | Checks whether the user ID has sufficient rights to create data sets
-    **commandExec**      | Checks whether the user ID has sufficient rights to execute TSO commands through TSOCMD
-    **fmpLoadLibExist**  | Checks whether the load library exists
-    **fmpLoadLibValid**  | Checks whether the load library belongs to File Master Plus
-    **fmpLoadLibAccess** | Checks whether the user ID has sufficient rights to access the load library
-    **dsDelete**         | Checks whether the user ID has sufficient rights to delete existing data sets. If the user ID does not have sufficient rights to delete data sets, the Test4z APIs execute, but do not delete the temporary data sets created during execution
-    **dsWrite**          | Checks whether the user ID has sufficient rights to write records in existing data sets
+    **serviceVersion**    | Returns the Test4z service version
+    **serviceUserID**     | Returns the user ID under which the service is started
+    **fmpLoadLibDS**      | Returns the FMP load library dataset name
+    **dsCreate**          | Checks whether the user ID has sufficient rights to create data sets
+    **dsWrite**           | Checks whether the user ID has sufficient rights to write records in existing data sets
+    **commandExec**       | Checks whether the user ID has sufficient rights to execute TSO commands through TSOCMD
+    **fmpLoadLibExist**   | Checks whether the load library exists
+    **fmpLoadLibValid**   | Checks whether the load library belongs to File Master Plus
+    **fmpLoadLibAccess**  | Checks whether the user ID has sufficient rights to access the load library
+    **fmpLoadLibVersion** | Returns the FMP version
+    **dsDelete**          | Checks whether the user ID has sufficient rights to delete existing data sets. If the user ID does not have sufficient rights to delete data sets, the Test4z APIs execute, but do not delete the temporary data sets created during execution
                               
     **Possible values for these controls : Pass, Fail and Skip**
     
