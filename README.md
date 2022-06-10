@@ -45,8 +45,8 @@ Once you have met the prerequisites,
 
 ## Notes
  
-1. Exclude feature of the Compare endpoint requires a certain File Master Plus version 
-   12.0 and the required PTF installation. Make sure you have the required PTF to be able to use the field exclusion.
+1. Exclude feature of the Compare endpoint requires a certain File Master Plus version 12.0 and the required PTF installation. Make sure you have the required PTF to be able to use the field exclusion.
+2. You can run the mock server for Test4z to use samples with no need to install the Test4z service on z/OS. See [Mock](https://github.com/BroadcomMFD/test4z/blob/main/samples/mock/Readme.md) for more information.
   
 ## License
 See the [LICENSE.md](LICENSE.md) file.
