@@ -83,7 +83,7 @@ search_filters = [
     .build(),
 ]
 
-update_filter = [
+update_criteria = [
     UpdateCriteriaBuilder()
         .field_name("PRODUCT-TYPE")
         .field_operator(Operators.LIKE.value)
@@ -93,7 +93,7 @@ update_filter = [
     .build()
 ]
 
-filter_criteria = FilterBuilder().field_name("ACCOUNT-NUMBER").field_operator(Operators.EQUAL.value).field_value(["123456000068"]).field_type(Types.CHARACTER.value).build()
+update_filter = FilterBuilder().field_name("ACCOUNT-NUMBER").field_operator(Operators.EQUAL.value).field_value(["123456000068"]).field_type(Types.CHARACTER.value).build()
 
 @pytest.fixture
 def yield_fixture():
@@ -127,7 +127,7 @@ def test_with_yield_fixture(yield_fixture):
     assert request_successful(roll_back_result)
 
     # Update a particular record in the dataset and assert the number of the customers affected
-    update_result = update(main_dataset, copybook, update_filter, filter_criteria)
+    update_result = update(main_dataset, copybook, update_criteria, update_filter)
     assert request_successful(update_result)
     assert update_result['data']['recordsChanged'] == 1
 
@@ -136,6 +136,6 @@ def test_with_yield_fixture(yield_fixture):
     assert job_successful(job2)
 
     # Verify the number of the updated records changed after the batch application
-    search_result2 = search(main_dataset, copybook, update_filter)
+    search_result2 = search(main_dataset, copybook, [update_filter])
     assert request_successful(search_result2)
     assert len(search_result2['data']['Record']) == 1
