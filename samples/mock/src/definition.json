@@ -56,7 +56,7 @@
     },
     {
       "requestBody": "{\"dataSet\":\"MOCK.TEST4Z.BATCHAPP.DATA(CUSTIN)\",\"copyBook\":\"MOCK.TEST4Z.BATCHAPP.COPY(CUSTREC)\",\"searchQuery\":[{\"fieldName\":\"ACCOUNT-NUMBER\",\"fieldOperator\":\"=\",\"fieldValue\":[\"123456000068\"],\"fieldType\":\"Character\"}],\"limit\":0,\"offset\":0}",
-      "responseBody": "{\"data\":{\"Record\":[68,{\"TOTAL-CHECKS\":50,\"CUST-NAME\":\"CHART BUSTERS AMIGO\",\"PRODUCT-TYPE\":\"C\",\"REORDER-DATE\":20141214,\"ACCOUNT-NUMBER\":123456000068,\"ACTUAL-CHECKS\":2,\"NOTIFICATION-DATE\":$NTFDTE,\"CUST-ADDR\":\"496 CANTONMENT\",\"FILLER\":\"\",\"REORDERED\":\"F\"}],\"dsn\":\"MOCK.TEST4Z.BATCHAPP.DATA(CUSTIN)\"}}"
+      "responseBody": "{\"data\":{\"Record\":[{\"number\":68,\"CUSTINREC\":{\"TOTAL-CHECKS\":50,\"CUST-NAME\":\"CHART BUSTERS AMIGO\",\"PRODUCT-TYPE\":\"B\",\"REORDER-DATE\":20141214,\"ACCOUNT-NUMBER\":123456000068,\"ACTUAL-CHECKS\":2,\"NOTIFICATION-DATE\":$NTFDTE,\"CUST-ADDR\":\"496 CANTONMENT\",\"FILLER\":\"\",\"REORDERED\":\"F\"}}],\"dsn\":\"BEKHI01.TEST4Z.BATCHAPP.DATA(CUSTIN)\"}}"
     },
     {
       "requestBody": "{\"dataSet\":\"MOCK.TEST4Z.BATCHAPP.DATA(CUSTIN)\",\"copyBook\":\"MOCK.TEST4Z.BATCHAPP.COPY(CUSTREC)\",\"searchQuery\":[{\"fieldName\":\"ACTUAL-CHECKS\",\"fieldOperator\":\"<=\",\"fieldValue\":[\"3\"],\"fieldType\":\"Number\",\"queryOperator\":\"AND\"},{\"fieldName\":\"TOTAL-CHECKS\",\"fieldOperator\":\"=\",\"fieldValue\":[\"30\"],\"fieldType\":\"Number\",\"queryOperator\":\"AND\"},{\"fieldName\":\"PRODUCT-TYPE\",\"fieldOperator\":\"=\",\"fieldValue\":[\"S,C\"],\"fieldType\":\"Character\",\"queryOperator\":\"OR\"},{\"fieldName\":\"ACTUAL-CHECKS\",\"fieldOperator\":\"<=\",\"fieldValue\":[\"5\"],\"fieldType\":\"Number\",\"queryOperator\":\"AND\"},{\"fieldName\":\"TOTAL-CHECKS\",\"fieldOperator\":\"=\",\"fieldValue\":[\"50\"],\"fieldType\":\"Number\",\"queryOperator\":\"AND\"},{\"fieldName\":\"PRODUCT-TYPE\",\"fieldOperator\":\"=\",\"fieldValue\":[\"S,C\"],\"fieldType\":\"Character\",\"queryOperator\":\"OR\"},{\"fieldName\":\"ACTUAL-CHECKS\",\"fieldOperator\":\"<=\",\"fieldValue\":[\"8\"],\"fieldType\":\"Number\",\"queryOperator\":\"AND\"},{\"fieldName\":\"TOTAL-CHECKS\",\"fieldOperator\":\"=\",\"fieldValue\":[\"80\"],\"fieldType\":\"Number\",\"queryOperator\":\"AND\"},{\"fieldName\":\"PRODUCT-TYPE\",\"fieldOperator\":\"=\",\"fieldValue\":[\"S,C\"],\"fieldType\":\"Character\",\"queryOperator\":null}],\"limit\":0,\"offset\":0}",
@@ -64,7 +64,7 @@
     },
     {
       "requestBody": "{\"dataSet\":\"MOCK.TEST4Z.BATCHAPP.DATA(CUSTIN)\",\"copyBook\":\"MOCK.TEST4Z.BATCHAPP.COPY(CUSTREC)\",\"searchQuery\":[{\"fieldName\":\"PRODUCT-TYPE\",\"fieldOperator\":\"%\",\"fieldType\":\"Character\",\"filterValue\":\"B\",\"targetValue\":\"C\"}],\"limit\":0,\"offset\":0}",
-      "responseBody": "{\"data\":{\"Record\":[68,{\"TOTAL-CHECKS\":50,\"CUST-NAME\":\"CHART BUSTERS AMIGO\",\"PRODUCT-TYPE\":\"C\",\"REORDER-DATE\":20141214,\"ACCOUNT-NUMBER\":123456000068,\"ACTUAL-CHECKS\":2,\"NOTIFICATION-DATE\":$NTFDTE,\"CUST-ADDR\":\"496 CANTONMENT\",\"FILLER\":\"\",\"REORDERED\":\"F\"}],\"dsn\":\"MOCK.TEST4Z.BATCHAPP.DATA(CUSTIN)\"}}"
+      "responseBody": "{\"data\":{\"Record\":[{\"number\":68,\"CUSTINREC\":{\"TOTAL-CHECKS\":50,\"CUST-NAME\":\"CHART BUSTERS AMIGO\",\"PRODUCT-TYPE\":\"B\",\"REORDER-DATE\":20141214,\"ACCOUNT-NUMBER\":123456000068,\"ACTUAL-CHECKS\":2,\"NOTIFICATION-DATE\":$NTFDTE,\"CUST-ADDR\":\"496 CANTONMENT\",\"FILLER\":\"\",\"REORDERED\":\"F\"}}],\"dsn\":\"BEKHI01.TEST4Z.BATCHAPP.DATA(CUSTIN)\"}}"
     }
   ],
   "update": [
