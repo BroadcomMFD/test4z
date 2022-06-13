@@ -3,8 +3,11 @@
 This folder contains Test4z sample test suites and code snippets in Python and NodeJS environments.
 
 ## Note
-Before continuing with the installation, make sure you met the prerequisites and you cloned the repository:
-* [/Readme.md](/README.md)
+1. Before continuing with the installation, make sure you met the prerequisites and you cloned the repository:
+    * [/Readme.md](/README.md)
+
+2. You can run the mock server for Test4z to use samples with no need to install the Test4z service on z/OS. 
+See [Mock Server](/samples/mock/Readme.md) for more information.
 
 ## Continue Installation
 
