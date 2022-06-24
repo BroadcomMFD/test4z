@@ -41,17 +41,23 @@ test("Retrieve the spool content from CA View/ Web Viewer", async function () {
   let repositoryID: number = repositoryList[0].id;
 
   let reports: Reports = new Reports(session, repositoryID);
-  let report: IReport[] = await reports.listReports();
-  expect(report.length).toBeGreaterThan(0);
-  let reportHandleID: string = report[19].handle;
+  let reportList: IReport[] = await reports.listReports();
+  expect(reportList.length).toBeGreaterThan(0);
+  let test4zReportHandle: string = "";
+  for (let report of reportList) {
+    if (report.reportID === "T4ZVIEW") {
+      test4zReportHandle = report.handle;
+      break;
+    }
+  }
 
   let responsetxt: IResult = (await ViewRestClient.getExpectJSON(
     session,
-    "/v1/view/rptdata/" + repositoryID + "/" + reportHandleID
+    "/v1/view/rptdata/" + repositoryID + "/" + test4zReportHandle
   )) as IResult;
   let responsestring = "";
   for (let reportData of responsetxt.result["Report Data"]) {
-    responsestring += reportData.data + "\n";
+     responsestring += reportData.data + "\n";
   }
   expect(responsestring).toContain("ALL RECORDS ARE SORTED");
 });
