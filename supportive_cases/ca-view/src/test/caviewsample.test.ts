@@ -20,7 +20,6 @@ test.only("Submit a job & retrieve the spool content for SORTOUT DD through ZOSM
     HLQ + "." + JCLDSName
   );
   expect(job.retcode).toMatch("CC 0000" || "CC 0004");
-  console.log("Return code is " , job.retcode);
   let spoolContent = "";
   const jobLogs: IJobFile[] = await GetJobs.getSpoolFilesForJob(
     zOSMFSession,
@@ -44,12 +43,12 @@ test("Retrieve the spool content from CA View/ Web Viewer", async function () {
   let reports: Reports = new Reports(session, repositoryID);
   let reportList: IReport[] = await reports.listReports();
   expect(reportList.length).toBeGreaterThan(0);
-  let test4zReportHandle : String  = "";
+  let test4zReportHandle: string = "";
   for (let report of reportList) {
-     if(report.reportID === "T4ZVIEW"){
+    if (report.reportID === "T4ZVIEW") {
       test4zReportHandle = report.handle;
       break;
-     }
+    }
   }
 
   let responsetxt: IResult = (await ViewRestClient.getExpectJSON(
@@ -61,5 +60,4 @@ test("Retrieve the spool content from CA View/ Web Viewer", async function () {
      responsestring += reportData.data + "\n";
   }
   expect(responsestring).toContain("ALL RECORDS ARE SORTED");
-  console.log(responsestring);
 });
