@@ -14,8 +14,7 @@ config.set('ZOSMF','password', password)
 
 with open("../../../config.cfg.new", "w") as fh:
     config.write(fh)
-os.rename("../../../config.cfg", "../../../config.cfg~")
+os.remove("../../../config.cfg")
 os.rename("../../../config.cfg.new", "../../../config.cfg")
-os.remove("../../../config.cfg~")
 
 print("\nZ/OSMF information collected successfully")
