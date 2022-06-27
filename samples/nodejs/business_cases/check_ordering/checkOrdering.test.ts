@@ -2,9 +2,10 @@
    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED
    FOR DETAILED INFORMATION ABOUT THIS TEST SUITE AND THE USE CASE, PLEASE CHECK THE readme.md
 */
-import { Test4zService, Filter, FilterBuilder, Operators, QueryOperators, UpdateCriteria, Types, UpdateModel } from "@broadcom/test4z";
+import { Test4zService, SessionFactory, Profiles, Filter, FilterBuilder, Operators, QueryOperators, UpdateCriteria, Types, UpdateModel } from "@broadcom/test4z";
+import { Delete, IZosFilesResponse } from "@zowe/zos-files-for-zowe-sdk";
+import { Session } from "@zowe/imperative";
 import { TestHelpers } from "../../TestHelpers";
-
 
 //Testing variables, replace [HLQ] with the proper values
 let batchAppJCLDataset = "TEST4Z.BATCHAPP.JCL(CUSTSEQ)";
@@ -150,5 +151,10 @@ describe("Check Ordering Batchapp validation", function () {
         //rolling back changes by replacing the main data set with the copy data set
         const backupResult = await Test4zService.rollbackDataSet(copyDataset, mainDataset);
         expect(backupResult).toBeSuccessfulResult(); //Verify the API Request was successful
+
+        //Cleanup - removing the temporary dataset
+        const session: Session = await SessionFactory.getSession(Profiles.zosmf);
+        const deleteResult: IZosFilesResponse = await Delete.dataSet(session, copyDataset);
+        expect(deleteResult.success).toBe(true);
     });
 });
