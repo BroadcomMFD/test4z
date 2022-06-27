@@ -44,16 +44,8 @@ Once you have met the prerequisites,
 
 ## Notes
  
-Exclude feature of the Compare endpoint requires a certain File Master Plus version 
-   12.0 and the required PTF installation. Make sure you have the required PTF to be able to use the field exclusion.
+- Exclude feature of the Compare endpoint requires a certain File Master Plus version 12.0 and the required PTF installation. Make sure you have the required PTF to be able to use the field exclusion.
+- We recommend to use the same version of service/samples to avoid compatibility issues.
 
-## Compatibility
-The following table shows the compatibility between the Test4z sample project and the Test4z service that runs on z/OS.
-|Test4z sample release|1.0|1.1.1|1.2.2|2.0.0|
-|-----|----|----|----|----|
-|Test4z service 1.0|YES|NO|NO|YES|
-|Test4z service 1.1.1|YES|YES|NO|YES|
-|Test4z service 1.2.2|YES|YES|YES|YES|
-|Test4z service 2.0.0|YES|YES|YES|YES|
 ## License
 See the [LICENSE.md](LICENSE.md) file.
