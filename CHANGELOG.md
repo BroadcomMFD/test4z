@@ -1,9 +1,10 @@
 This file includes the major changes to the Test4z sample project.
-## [2.0.0] 2022-03-22
+## [2.0.0] 2022-06-29
 ### Added
 - Added z/OS Connect supportive case.
 - Added CA View supportive case.
 - Added the mock server.
+- Added capability of comparing data sets with different layouts.
 
 ## [1.2.2] 2022-03-22
 ### Added
