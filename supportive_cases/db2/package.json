@@ -1,6 +1,6 @@
 {
   "name": "db2-sample",
-  "version": "1.2.2",
+  "version": "2.0.0",
   "description": "Test sample for DB2",
   "author": "Broadcom",
   "scripts": {
@@ -29,7 +29,7 @@
   },
   "dependencies": {
     "@broadcom/test4z": "2.0.0",
-    "@zowe/cli": "7.2.1",
+    "@zowe/cli": "7.2.2",
     "@zowe/db2-for-zowe-cli": "5.0.0"
   }
 }

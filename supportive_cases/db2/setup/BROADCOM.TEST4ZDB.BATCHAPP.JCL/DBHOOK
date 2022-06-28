@@ -10,8 +10,8 @@ $$JOBCARD
 //SYSTSIN  DD *
  DSN SYSTEM($$subsystem) RETRY(0)
  BIND PACKAGE     ( DBHOOK )                                     -
-     OWNER       ( $$HLQ )                                    -
-     QUALIFIER   ( $$HLQ )                                   -
+     OWNER       ( $$SQLID )                                    -
+     QUALIFIER   ( $$SQLID )                                   -
      ACTION      ( REPLACE )         DEGREE        ( 1 )          -
      MEMBER      ( CUSTDB )                                     -
                                                                   -
@@ -35,8 +35,8 @@ $$JOBCARD
 //SYSTSIN  DD *
  DSN SYSTEM($$subsystem) RETRY(0)
  BIND PLAN        ( HOOKDB )                                     -
-     OWNER       ( $$HLQ )                                     -
-     QUALIFIER   ( $$HLQ )                                     -
+     OWNER       ( $$SQLID )                                     -
+     QUALIFIER   ( $$SQLID )                                     -
      CACHESIZE   ( 3072 )                                         -
      ACTION      ( REPLACE ) RETAIN  VALIDATE      ( RUN  )       -
      ISOLATION   ( CS  )             ACQUIRE       ( USE )        -

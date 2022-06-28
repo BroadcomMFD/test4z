@@ -18,7 +18,7 @@ The Web-Viewer instance collects the jobs submitted through z/OSMF. Using the ca
 
         npm run setHlq
 
-4. Open the /supportive_cases/ca-view/setup/script.sh file and fill in the required parameters listed at the beginning of the file. Important: Make sure you use UPPER CASE for HLQ and Job Card fields.
+4. Open the [/supportive_cases/ca-view/setup/script.sh](/supportive_cases/ca-view/setup/script.sh) file and fill in the required parameters listed at the beginning of the file. Important: Make sure you use UPPER CASE for HLQ and Job Card fields.
 
 5. Run the following command and enter the ca-view specific information. Ask your mainframe administrator for the information.
 

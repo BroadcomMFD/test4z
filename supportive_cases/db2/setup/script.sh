@@ -4,6 +4,7 @@ source ../../../.scripts/BaseScript.sh
 
 ############# IMPORTANT! UPDATE THE FOLLOWING PARAMETERS BEFORE RUNNING THIS SCRIPT: #############
 hlq=""; #<--------------- The high-level qualifier of the mainframe user (as defined in the test4z profile in zowe.config.json )
+sqlid=""; #<-------------- The prefix for DB2 objects. 
 storageClass=""; #<------------ Storage class for Test4z deployment
 db2Subsystem=""; #<------------ DB2 subsystem
 jobcard="//JOB_NAME   JOB IDxxx,
@@ -23,6 +24,7 @@ db2DatabaseName="T4ZDB";
 db2TableName="TEST4ZTB";
 tempDirectoryName="TEST4ZDB_TEMP";
 hlqPlaceHolder='$$HLQ';
+sqlidPlaceHolder='$$SQLID';
 jobCardPlaceHolder='$$JOBCARD';
 stoPlaceHolder='$$sto';
 db2SubsystemPlaceHolder='$$subsystem';

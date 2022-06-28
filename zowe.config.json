@@ -26,7 +26,7 @@
                         "protocol": "https",
                         "type": "basic",
                         "port": 0,
-                        "basePath": "/api/v1/test4z",
+                        "basePath": "/api/v1",
                         "strictSSL": false,
                         "hlq": "",
                         "rejectUnauthorized": false
@@ -42,7 +42,8 @@
                         "port": 0,
                         "host": "",
                         "database": "",
-                        "hlq": ""
+                        "hlq": "",
+                        "sqlid": ""
                     },
                     "secure": [
                         "user",
@@ -59,6 +60,18 @@
                         "basePath": "web-viewer",
                         "strictSSL": false,
                         "rejectUnauthorized": false
+                    },
+                    "secure": [
+                        "user",
+                        "password"
+                    ]
+                },
+                "zosconnect": {
+                    "type": "zosconnect",
+                    "properties": {
+                        "host": "",
+                        "protocol": "http",
+                        "port": 0
                     },
                     "secure": [
                         "user",
@@ -83,7 +96,8 @@
         "base": "my_base",
         "test4z": "lpar1.test4z",
         "db2": "lpar1.db2",
-        "caview": "lpar1.caview"
+        "caview": "lpar1.caview",
+        "zosconnect": "lpar1.zosconnect"
     },
     "plugins": []
 }
