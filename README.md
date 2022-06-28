@@ -1,11 +1,12 @@
 # Test4z Sample
-The Test4z sample project contains client-side installation of Test4z as well as a series of sample tests that use the Test4z API to run tests on data sets on your z/OS system.
+The Test4z sample project contains client-side installation of Test4z as well as a series of sample tests that use the Test4z API to run tests on data sets on your z/OS system. 
 
 Test4z leverages z/OSMF and Zowe to facilitate batch application testing for files on the z/OS platform. Test4z lets you perform certain operations on your data sets from a client machine. Currently, the following operations are supported:
 * **Compare** records contained in two different data sets.
 * **Search** through records in a data set.
 * **Update** records in a dataset
 * **Copy** data set with filter, skip, limit possibilities
+Addiotionally, you can use the provided mock server that allows you to use the Test4z samples when Test4z is not running on mainframe.
 
 ## Getting Started
 Follow these instructions to set up the Test4z Sample project on your local machine.
@@ -13,7 +14,7 @@ Follow these instructions to set up the Test4z Sample project on your local mach
 ### Prerequisites
 Before you attempt to install the Test4z Sample project, ensure you meet the following prerequisites:
 
-* Test4z is deployed, configured and running on your z/OS system.
+* Test4z is deployed, configured and running on your z/OS system. This is not required when you want to try the functionality of the sample tests using the mock server.
 * [Visual Studio Code](https://code.visualstudio.com/download) (VS Code) is installed.
 * [Node.js](https://nodejs.org/en/download/) is installed.
 * If you use Windows, ensure VS Code uses bash to execute shell (.sh) scripts. Follow these steps:
