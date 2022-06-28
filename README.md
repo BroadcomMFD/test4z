@@ -6,7 +6,7 @@ Test4z leverages z/OSMF and Zowe to facilitate batch application testing for fil
 * **Search** through records in a data set.
 * **Update** records in a dataset
 * **Copy** data set with filter, skip, limit possibilities
-Addiotionally, you can use the provided mock server that allows you to use the Test4z samples when Test4z is not running on mainframe.
+Additionally, you can use the provided mock server that allows you to use the Test4z samples when Test4z is not running on mainframe.
 
 ## Getting Started
 Follow these instructions to set up the Test4z Sample project on your local machine.
