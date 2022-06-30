@@ -98,5 +98,11 @@
       "requestBody": "{}",
       "responseBody": "{\"owner\": \"\", \"phase\": 20, \"subsystem\": \"\", \"phase-name\": \"Job is on the hard copy queue\", \"job-correlator\": \"\", \"type\": \"JOB\", \"url\": \"\", \"jobid\": \"JOB0000\", \"class\": \"B\", \"files-url\": \"\", \"jobname\": \"CUSTSEQ\", \"status\": \"OUTPUT\", \"retcode\": \"CC 0000\"}"
     }
+  ],
+  "deleteDataset": [
+    {
+      "requestBody": "{}",
+      "responseBody": "{ \"success\": true, \"commandResponse\": \"'Data set deleted successfully.'\" }"
+    }
   ]
 }
