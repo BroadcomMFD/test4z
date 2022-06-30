@@ -50,3 +50,6 @@ Once you have met the prerequisites,
 
 ## License
 See the [LICENSE.md](LICENSE.md) file.
+
+## Testing Best Practices
+Learn how to implement testing best practices using the Test4z test samples. See the [TESTING-BEST-PRACTICES.md](TESTING-BEST-PRACTICES.md) file.
