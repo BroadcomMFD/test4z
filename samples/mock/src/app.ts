@@ -36,7 +36,12 @@ const server = https.createServer(options, app);
         res.status(200);
         const response = parseRequest("jobOutput", JSON.stringify(req.body))
         res.send(JSON.parse(response));
+    });
 
+    app.delete("/*", jsonParser, (req: Request, res: Response) => {
+        res.status(200);
+        const response = parseRequest("deleteDataset", "")
+        res.send(JSON.parse(response));
     });
 
     server.listen(port, () => {

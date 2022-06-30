@@ -22,6 +22,5 @@ npx zowe config set profiles.lpar1.profiles.zosmf.properties.protocol "https"
 printf "\nProtocol  : https"
 npx zowe config set --secure profiles.lpar1.profiles.zosmf.properties.user "MOCK"
 npx zowe config set --secure profiles.lpar1.profiles.zosmf.properties.password "MOCK"
-printf "\n\nZ/OSMF configuration in zowe.config.json was successful\n\n"
-printf "The mock server has started\n"
+printf "\n\nZ/OSMF configuration in zowe.config.json was successful\n\n\n"
 npx ts-node ./mock/src/app.ts
