@@ -46,7 +46,8 @@ Once you have met the prerequisites,
 
 ## Notes
  
-1. The Exclude feature of the Compare endpoint requires File Master Plus version 12.0 and the relevant PTF installation. Make sure you have the required PTF to be able to use the field exclusion.
+The version of samples are compatible with the specific version of the service installation.
+
 
 ## License
 See the [LICENSE.md](LICENSE.md) file.
