@@ -80,7 +80,7 @@
   "diagnostic": [
     {
       "requestBody": "",
-      "responseBody": "{\"data\":{\"serviceVersion\":{\"status\":\"2.0.0\"},\"serviceUserID\":{\"status\":\"MOCK\"},\"fmpLoadLibDS\":{\"status\":\"AD1DEV.PUBLIC.FMMVS120.CDBILOAD\"},\"dsCreate\":{\"status\":\"Pass\"},\"dsWrite\":{\"status\":\"Pass\"},\"commandExec\":{\"status\":\"Pass\"},\"fmpLoadLibExist\":{\"status\":\"Pass\"},\"fmpLoadLibValid\":{\"status\":\"Pass\"},\"fmpLoadLibAccess\":{\"status\":\"Pass\"},\"fmpLoadLibVersion\":{\"status\":\"12.0\"},\"dsDelete\":{\"status\":\"Pass\"}}}"
+      "responseBody": "{\"data\":{\"serviceVersion\":{\"status\":\"2.0.0\"},\"serviceUserID\":{\"status\":\"MOCK\"},\"fmpLoadLibDS\":{\"status\":\"MOCK.PUBLIC.FMP12.LOAD\"},\"dsCreate\":{\"status\":\"Pass\"},\"dsWrite\":{\"status\":\"Pass\"},\"commandExec\":{\"status\":\"Pass\"},\"fmpLoadLibExist\":{\"status\":\"Pass\"},\"fmpLoadLibValid\":{\"status\":\"Pass\"},\"fmpLoadLibAccess\":{\"status\":\"Pass\"},\"fmpLoadLibVersion\":{\"status\":\"12.0\"},\"dsDelete\":{\"status\":\"Pass\"}}}"
     }
   ],
   "jobSubmit": [
