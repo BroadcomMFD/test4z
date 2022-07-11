@@ -6,10 +6,10 @@ Use the following best practices when you write your test cases.
 A self-cleaning test returns the test environment and the variables to their original state after each execution. This type of test does not leave data behind and removes the objects that were created during execution. Self-cleaning is a good test case characteristic. A self-cleaning test suite also includes repeatability and accuracy characteristics, to allow the test to run multiple times and to return the expected results.
 
 
-All the test samples that are provided with Test4z implement the self-cleaning concept. The sample test cases use setup and teardown abilities of Jest framework to run as follows:
+All the test samples that are provided with Test4z implement the self-cleaning concept. The sample test cases use the setup and teardown abilities of the Jest framework to run as follows:
 1. The test case creates a temporary backup data set in the beforeEach block.
 2. The test case executes the application and performs data changes.
-3. The test case uses the backup data set to roll back to the original state all the data sets into the `afterEach` block.
+3. The test case uses the backup data set to roll back to the original state of all the data sets into the `afterEach` block.
 >**Note** Test4z does not delete the temporary backup data sets. You can delete the temporary backup data sets at the end of the test case using Zowe CLI. For more information about the Zowe CLI data set delete command, see the [Zowe documentation](https://docs.zowe.org/).
 Self-cleaning test cases enable test automation, because all the data preparations are managed in the test cases themselves.
 
@@ -21,7 +21,7 @@ You can achieve proper isolation by creating a different set of resources for ea
 Each of your tests must create a copy of the data set, must note the name of the copy, and must use the copy as an input for the JCL that manipulates data. Also the JCLs must be isolated. You must provide different JCLs for each test case. Perform the following steps to provide different JCLs for each test case:
 1. Select a production JCL as a template.
 2. Copy the content of the JCL to your test.
-3. Overwrite the corresponding DSNs and get it submitted through the internal reader.
+3. Overwrite the corresponding DSNs and get them submitted through the internal reader.
 If you follow the sequence, the production JCL is not altered and you have an isolated test case.
 
 ## Small Tests
@@ -49,8 +49,8 @@ A single test case may have multiple assertions. To achieve a specific purpose, 
                 expect(TestHelpers.getNotificationDates(records2)).toBeNotificationDatesEqualTo(todaysDate); //Verify all the notification dates were updated.
         ….Scenario ‘n’
             });
-When the test in the previous example fails, the cause may reside in one of the assertions of scenario 1, scenario 2, or scenario ‘n’. If the test suite has many assertions with complicated scenarios, it would be difficult to identify the exact reason of the failure. With a single assertion, the test passes or fails for a single reason, hence it is easy to identify and communicate the success or failure of a piece of code.
+When the test in the previous example fails, the cause may reside in one of the assertions of scenario 1, scenario 2, or scenario ‘n’. If the test suite has many assertions with complicated scenarios, it would be difficult to identify the exact reason for the failure. With a single assertion, the test passes or fails for a single reason, hence it is easy to identify and communicate the success or failure of a piece of code.
 
-The test samples that are provided with Test4z may include few multiple assertions in a test and single assertions in each test. The `searchSample` test case contains multiple assertions. The multiple assertions are arranged in such an order to act and assert according to the purpose. The `concurrentIndependentJobs` test set from the cascade functionality has multiple tests with a single assertion.
+The test samples that are provided with Test4z may include a few multiple assertions in a test and single assertions in each test. The `searchSample` test case contains multiple assertions. The multiple assertions are arranged in such an order to act and assert according to the purpose. The `concurrentIndependentJobs` test set from the cascade functionality has multiple tests with a single assertion.
 
 As a best practice, you should have a single assertion in a test, or you should use fewer multiple assert scenarios in a single test. The more assertions that you have in a single test, the harder it is to identify the problem when the test fails.
