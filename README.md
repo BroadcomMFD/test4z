@@ -2,8 +2,8 @@
 The Test4z sample project contains client-side installation of Test4z as well as a series of sample tests that use the Test4z API to run tests on data sets on your z/OS system. 
 
 Test4z leverages z/OSMF and Zowe to facilitate batch application testing for files on the z/OS platform. Test4z lets you perform certain operations on your data sets from a client machine. Currently, the following operations are supported:
-* **Compare** records contained in two different data sets.
-* **Search** through records in a data set.
+* **Compare** records contained in two different data sets
+* **Search** through records in a data set
 * **Update** records in a dataset
 * **Copy** data set with filter, skip, limit possibilities
 Additionally, you can use the provided mock server that allows you to use the Test4z samples when Test4z is not running on mainframe.
@@ -51,3 +51,6 @@ The version of samples are compatible with the specific version of the service i
 
 ## License
 See the [LICENSE.md](LICENSE.md) file.
+
+## Testing Best Practices
+Learn how to implement testing best practices using the Test4z test samples. See the [TESTING-BEST-PRACTICES.md](TESTING-BEST-PRACTICES.md) file.
