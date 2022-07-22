@@ -1,6 +1,8 @@
 # Mock
 This repository contains the mock server for Test4z. Run the Test4z mock server to use the Test4z samples when Test4z is not running on mainframe. Once the server is running, you can run the samples.
 
+Watch this demo to learn how to install and use the mock server: [https://www.youtube.com/watch?v=WzXJorQjIko](https://www.youtube.com/watch?v=WzXJorQjIko)
+
 ## Installing and Running the Mock Server
 1. Open a new terminal.
 2. Navigate to the samples folder.
